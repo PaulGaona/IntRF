@@ -1,0 +1,33 @@
+Package: IntRF
+Type: Package
+Title: Interval-Valued Random Forests
+Description: An extension of random forests regression for interval-valued data. 
+    The package is compatible with the functionality of mvpart. Thank you to the 
+    creators of mvpart Terry M Therneau, Beth Atkinson, Brian Ripley, Jari Oksanen
+    and Glenn De'ath.
+Version: 0.1.0
+Authors@R: person("Paul", "Gaona Partida", email = "paulrgaona@gmail.com",
+    role = c("aut", "cre"))
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports:
+    ggplot2,
+    graphics,
+    grDevices,
+    methods,
+    Rcpp,
+    rlang,
+    stats
+Depends: 
+    R (>= 2.10)
+Config/testthat/edition: 3
+Suggests:
+    spelling, 
+    base,
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Language: en-US
