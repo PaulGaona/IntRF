@@ -37,7 +37,7 @@ This is a basic example, using the vignette:
 vignette("IntRF_vignette", package = "IntRF")
 ```
 
-## Additonal Information
+## Additional Information
 This package is intended as a learning exercise in R-package development. We have taken a formally existing CRAN R-package, and made use of its functionality, we use [mvpart](https://CRAN.R-project.org/package=mvpart) as a wrapper for random forests  with a pairwise random sampling of predictor variables.
 
 We included all functions of mvpart, as a workaround to  ````Additional_repositories  ```` field in the ````NAMESPACE```` file. ````IntRF```` passes ````devtools::check()```` and ```` rcmdcheck::rcmdcheck()```` without throwing an error, warning, or note.

@@ -1,3 +1,3 @@
-#' @useDynLib IntRF, .registration = TRUE, .fixes = "C_"
+#' @useDynLib IntRF, .registration = TRUE, .fixes = ".C"
 #' @importFrom Rcpp sourceCpp
 NULL

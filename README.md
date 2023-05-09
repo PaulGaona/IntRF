@@ -28,7 +28,7 @@ This is a basic example, using the vignette:
 vignette("IntRF_vignette", package = "IntRF")
 ```
 
-## Additonal Information
+## Additional Information
 
 This package is intended as a learning exercise in R-package
 development. We have taken a formally existing CRAN R-package, and made
