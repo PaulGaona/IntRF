@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/PaulGaona/IntRF/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PaulGaona/IntRF/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of IntRF is run tree-based regression for interval-valued data.
+The goal of IntRF is to run tree-based regression for interval-valued data.
 
 ## Installation
 
