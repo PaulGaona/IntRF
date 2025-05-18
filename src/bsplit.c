@@ -21,11 +21,11 @@ void bsplit(struct node *me, int nodenum)
     double improve;
     FLOAT split;
     struct split *tsplit;
-    Sint *index;
+    int *index;
     int  *which;
     FLOAT *xtemp;  /*these 3 because I got tired of typeing "rp.xtemp", etc*/
     double **ytemp;
-    double *wtemp;  
+    double *wtemp;
 
     which = rp.which;
     xtemp = rp.xtemp;
@@ -50,7 +50,7 @@ void bsplit(struct node *me, int nodenum)
         if (rp.method!=5) ytemp[k] = rp.ydata[index[j]];
     k++;
     }
-    if (rp.method==5) { 
+    if (rp.method==5) {
         if (!(index[0] >=0 && which[index[0]]== nodenum)) k=0; else k=1;;
         for (j=1; j<rp.n; j++)
         if (index[j] >=0 && which[index[j]]== nodenum) {
@@ -59,14 +59,14 @@ void bsplit(struct node *me, int nodenum)
             if (index[jj] >=0 && which[index[jj]]== nodenum) {
             if (index[j]>index[jj])  { ij=index[j]; ijj=index[jj];}
             else { ij=index[jj]; ijj=index[j];}
-            ytemp[rp.n*kk-kk*(kk+1)/2+k-kk-1] = rp.ydata[rp.n*ijj-ijj*(ijj+1)/2+ij-ijj-1]; 
+            ytemp[rp.n*kk-kk*(kk+1)/2+k-kk-1] = rp.ydata[rp.n*ijj-ijj*(ijj+1)/2+ij-ijj-1];
             kk++;
             }
         k++;
         }
-    
+
     }
-        
+
     if (k==0 ||
       (nc==0 &&  xtemp[0]==xtemp[k-1])) continue;  /*no place to split */
 

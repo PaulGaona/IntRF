@@ -18,7 +18,7 @@ void nodesplit(struct node *me, int nodenum)
     FLOAT  psplit;
     int    *index;
     int    *which;
-    Sint   **sorts;
+    int   **sorts;
     FLOAT  **xdata;
 
     which = rp.which;

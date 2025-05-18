@@ -15,7 +15,7 @@ struct node *branch(struct node *tree, int obs)
     struct node *me;
     struct split *tsplit;
     FLOAT **xdata;
-    Sint   **sorts;
+    int   **sorts;
     if (tree->leftson ==0) return(0);
 
     me = tree;

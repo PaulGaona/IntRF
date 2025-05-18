@@ -11,14 +11,14 @@
 #include "rpart.h"
 #include "rpartproto.h"
 
-void rpartexp2(Sint *n2, double *y, double *eps, int *keep) {
+void rpartexp2(int *n2, double *y, double *eps, int *keep) {
     int n;
     double delta;
     int i, j;
     double lasty;
-        
+
     n = *n2;
-    
+
     /* let delta = eps * interquartile range */
 
     i = n/4;
