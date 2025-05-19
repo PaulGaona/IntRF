@@ -29,7 +29,7 @@ void surrogate(struct node *me, int nodenum)
     int  *index;
     int  *which,
      *tempy;
-    Sint **sorts;
+    int **sorts;
     FLOAT **xdata;
     int ncat;
     double adj_agree;

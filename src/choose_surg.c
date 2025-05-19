@@ -6,13 +6,13 @@
 **  Note that the CART folks use the %concordance, which factors missing
 **  values into the equations somewhat differently.
 **
-**  y is coded as  +1=left, -1=right, 0=missing 
-** 
+**  y is coded as  +1=left, -1=right, 0=missing
+**
 */
 #include "rpart.h"
 #include "rpartproto.h"
 
-void choose_surg(int nodenum,    int *y,         FLOAT *x,     Sint *order, 
+void choose_surg(int nodenum,    int *y,         FLOAT *x,     int *order,
          int ncat,    double *agreement, FLOAT *split, int *csplit,
          double tleft,double tright,     double *adj)
     {
@@ -50,7 +50,7 @@ void choose_surg(int nodenum,    int *y,         FLOAT *x,     Sint *order,
     llwt =0; rlwt =0;
     for (i=rp.n-1; i>=0; i--) { /*start with me sending all to the left */
         j = order[i];
-        if (j>=0 &&  which[j]==nodenum) {  
+        if (j>=0 &&  which[j]==nodenum) {
         lastx = x[i];        /*this is why I ran the loop backwards*/
         switch( y[j]) {
             case LEFT : ll++;
@@ -157,7 +157,7 @@ void choose_surg(int nodenum,    int *y,         FLOAT *x,     Sint *order,
         }
     total_wt  = llwt + rrwt;
 
-    /* 
+    /*
     ** We can calculate the best split category by category--- send each
     **  x value individually to its better direction
     */
