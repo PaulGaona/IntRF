@@ -51,3 +51,5 @@ approved, but instead a training for the package building process.
 Github repositories can be found here:
 [CRAN](https://github.com/cran/mvpart) and
 [mvignon](https://github.com/mvignon/mvpart).
+
+Importantly, the last time I was able to run this "pseudo-package" was around April, 2024. Where I had reinstalled R 3.6.3. It is from my understanding that the deprecation of `mvpart` with its legacy code to be the primary underlying issue.
